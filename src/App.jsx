@@ -28,6 +28,7 @@ function App() {
         {isLoggedIn && <Menu />}
         <Routes>
           <Route element={<ProtectedRoutes />}>
+            <Route path='/' element={<Listarticles />} />
             <Route path='/articles' element={<Listarticles />} />
             <Route path='/cart' element={<Cart />} />
             <Route path='/articlesadmin' element={<ProductsAppAdmin />} />
