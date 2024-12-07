@@ -93,7 +93,7 @@ const AfficheAerticleTable = () => {
             {
                 accessorKey: 'designation',
                 header: 'Désignation',
-                size: 100,
+                size: 10,
             },
             {
                 accessorKey: 'marque', //normal accessorKey
