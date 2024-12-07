@@ -23,7 +23,7 @@ const AfficheArticles = () => {
     const renderArticles = () => {
         if (isLoading)
             return <center>
-                <ReactLoading type='spokes' color="red" height={'8%'} width={'8%'} />
+                <ReactLoading type='spokes' color="red" height={'8%'} width={'8%'} style={{ marginTop: 70 }}/>
             </center>
         if (error)
             return <p>Impossible d'afficher la liste des articles...</p>
