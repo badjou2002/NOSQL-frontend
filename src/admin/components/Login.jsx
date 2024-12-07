@@ -43,10 +43,10 @@ export default function Login() {
             password: data.get('password'),
         };
         dispatch(login(objetuser));
-        navigate("/articles");
+        navigate("/");
     }
     if (isLoggedIn) {
-        navigate("/articles");
+        navigate("/");
     };
     return (
         <ThemeProvider theme={theme}    >
