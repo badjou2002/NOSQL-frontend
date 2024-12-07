@@ -29,7 +29,6 @@ function App() {
         <Routes>
           <Route element={<ProtectedRoutes />}>
             <Route path='/' element={<Listarticles />} />
-            <Route path='/articles' element={<Listarticles />} />
             <Route path='/cart' element={<Cart />} />
             <Route path='/articlesadmin' element={<ProductsAppAdmin />} />
           </Route>
