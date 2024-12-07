@@ -34,7 +34,7 @@ const Menu = () => {
         <Navbar fixed='top' style={{backgroundColor: 'rgba(0, 0, 0,0.8)', boxShadow: '0px 8px 8px rgba(0, 0, 0, 0.2)' }}>
             <Container fluid>
 
-                <Navbar.Brand as={Link} to="/articles"> <Image src={logo} width={150} style={{marginTop:-5}}/> </Navbar.Brand>
+                <Navbar.Brand as={Link} to="/"> <Image src={logo} width={150} style={{marginTop:-5}}/> </Navbar.Brand>
                 <Navbar.Toggle aria-controls="navbarScroll" />
                 <Navbar.Collapse id="navbarScroll">
                     <Nav
