@@ -102,7 +102,7 @@ const Createarticle = () => {
                 onClick={handleShow}
                 variant="outlined" color="success"
                 size="small"
-                style={{ 'margin': 20, 'left': '90%', fontFamily: 'Arial' }}
+                style={{ 'margin': 20, fontFamily: 'Arial' }}
             >
                 <i className="fa-solid fa-circle-plus"></i>
                 &nbsp;
