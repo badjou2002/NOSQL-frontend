@@ -42,7 +42,7 @@ const Menu = () => {
                         style={{ maxHeight: '100px', margin: '10px' }}
                         navbarScroll
                     >
-                        <Nav.Link style={{ color: 'white' }} as={Link} to="/articles">Articles</Nav.Link>
+                        <Nav.Link style={{ color: 'white' }} as={Link} to="/">Articles</Nav.Link>
                         {user.role == "admin" && <Nav.Link style={{ color: 'white', marginLeft: '10px' }} as={Link} to="/articlesadmin">Admin</Nav.Link>}
                     </Nav>
                     <IconButton
