@@ -5,7 +5,7 @@ const ProtectedRoutesLogin = () => {
     const { isLoggedIn } = useSelector((state) => state.auth)
 
     return (
-        !isLoggedIn ? <Outlet /> : <Navigate to="/articles" />
+        !isLoggedIn ? <Outlet /> : <Navigate to="/" />
     )
 }
 
