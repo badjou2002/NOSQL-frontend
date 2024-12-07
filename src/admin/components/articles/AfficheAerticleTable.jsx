@@ -39,6 +39,33 @@ const AfficheAerticleTable = () => {
     const columns = useMemo(
         () => [
             {
+                accessorKey: '_id',
+                header: 'actions',
+                size: 100,
+                Cell: ({ cell, row }) => (
+                    <div >
+                        <Button
+                            onClick={() => handleEdit(cell.row.original)}
+                            size="md"
+                            className="text-warning btn-link edit"
+                        >
+                            <i class="fa-solid fa-pen-to-square"></i>
+                        </Button>
+                        <Button
+                            onClick={(e) => {
+                                handleDelete(cell.row.original._id, cell.row.original.reference);
+                            }}
+
+                            size="md"
+                            className="text-danger btn-link delete"
+                        >
+                            <i className="fa fa-trash" />
+                        </Button>
+
+                    </div>
+                ),
+            },
+            {
                 accessorKey: 'imageart', //access nested data with dot notation
                 header: 'Image',
                 Cell: ({ cell }) => (
@@ -84,33 +111,7 @@ const AfficheAerticleTable = () => {
                 size: 100,
             },
 
-            {
-                accessorKey: '_id',
-                header: 'actions',
-                size: 100,
-                Cell: ({ cell, row }) => (
-                    <div >
-                        <Button
-                            onClick={() => handleEdit(cell.row.original)}
-                            size="md"
-                            className="text-warning btn-link edit"
-                        >
-                            <i class="fa-solid fa-pen-to-square"></i>
-                        </Button>
-                        <Button
-                            onClick={(e) => {
-                                handleDelete(cell.row.original._id, cell.row.original.reference);
-                            }}
-
-                            size="md"
-                            className="text-danger btn-link delete"
-                        >
-                            <i className="fa fa-trash" />
-                        </Button>
-
-                    </div>
-                ),
-            },
+            
 
         ],
         [articles],
